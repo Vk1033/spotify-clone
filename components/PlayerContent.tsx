@@ -17,7 +17,7 @@ interface PlayerContentProps {
 }
 
 const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
-  const [volume, setVolume] = useState(1);
+  const [volume, setVolume] = useState(0.5);
   const player = usePlayer();
   const [isPlaying, setIsPlaying] = useState(false);
 
